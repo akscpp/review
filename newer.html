@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="small_icon.svg" type="image/png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://awwzo.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Awwzo">
+    <meta property="og:description" content="Premium Pet Boarding">
+    <meta property="og:image" content="https://awwzo.com/small_icon.svg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="awwzo.com">
+    <meta property="twitter:url" content="https://awwzo.com">
+    <meta name="twitter:title" content="Awwzo">
+    <meta name="twitter:description" content="Premium Pet Boarding">
+    <meta name="twitter:image" content="https://awwzo.com/small_icon.svg">
+
+    <meta property="og:image" content="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
+    <meta name="keywords" content="pet boarding , pet ,  boarding ">
+    <meta name="robots" content="INDEX , FOLLOW">
+    <link rel="stylesheet" href="newer.css">
+    <!-- <link rel="icon" href="logo.png" type="image/png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <title>Premium Pet Boarding</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        const btn1Text = document.querySelector('.btn1-text');
+        const btn2Text = document.querySelector('.btn2-text');
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth <= 808) {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = "Get Started";
+            } else {
+                btn1Text.textContent = btn1Text.dataset.originalText;
+                btn2Text.textContent = btn2Text.dataset.originalText;
+            }
+        });
+    </script>
+
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #09020f;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+
+        }
+
+        .header .logo img {
+            width: 103px;
+            height: 66px;
+            /* padding-top: 5px; */
+            margin-top: 10%;
+
+        }
+
+        .header .menu-icon {
+            display: block;
+
+            background-image: url('ham_menu.svg');
+            background-size: cover;
+            width: 15px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 520px) {
+            .header {
+                display: flex;
+
+            }
+
+            .header .logo img {
+                width: 58px;
+                height: 64px;
+                padding-top: 5px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="header">
+        <div class="logo">
+            Add your logo image here
+            <img src="logo.png" alt="Logo" id="logoAwwzo">
+        </div>
+        <div class="titleHeader">
+            Add your title here
+            <h1>About Us</h1>
+        </div>
+    </div> -->
+    <!-- <div class="header">
+        <div class="headerCol">
+            <div class="launchingSoon">
+                <p class="launchText">Launching Soon</p>
+            </div>
+        </div> -->
+    <!-- <div class="menu-icon" onclick="toggleMenu()"></div> -->
+    <!-- <div class="titleHeader">
+            About Us
+        </div> -->
+    </div>
+    <div class="overlay"></div>
+    <div class="primary">
+        <!-- <div class="secondary"> -->
+        <div class="tertiary">
+            <div class="firstRow">
+                <div class="numOneRow">
+                    <div class="logoInTop">
+                        <img src="Logo Orange 4.png">
+                    </div>
+                    <div class="divKnowMore">
+                        <p id="knowMore">Know More</p>
+                    </div>
+                </div>
+                <div class="numTwoRow">
+                    <div class="divMainText">
+                        <p id="mainText">Experience a new level of premium pet boarding.</p>
+                    </div>
+                    <div>
+                        <p id="divSubText">We'll walk, play, and love your pup like our own.</p>
+                    </div>
+
+
+                    <div class="form_claim_firstRow">
+                        <div class="form_claim">
+                            <form id="contactForm" method="POST" name="google-sheet">
+                                <div class="form-group">
+                                    <!-- <label class="form_texts" for="email"></label> -->
+                                    <input type="email" id="email" name="Email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <!-- <label class="form_texts" for="phone"></label> -->
+                                    <input type="text" id="phone" name="Mobile" placeholder="Mobile" required>
+                                </div>
+                                <div>
+                                    <input type="submit" value="Claim Access" name="submit">
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                        <div id="myModal" class="modal">
+                            <img class="alertImage" src="icon_of_form.png">
+                            <p class="alertText1">Thanks for showing interest!</p>
+                            <p class="alertText2"> We'll get back to you soon!</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- <div class="divTextArrow">
+                    <div class="arrowText">Press My Nose</div>
+                    <img src="arrow.svg">
+
+                </div> -->
+                <div class="divImage">
+                    <img src="head_top.png" id="head_top">
+                </div>
+
+
+
+            </div>
+
+
+            <!-- third row has been replaced with second row as per design -->
+            <!-- third row (why us) -->
+            <div class="thirdRow" id="target">
+                <div class="divImage">
+                    <img src="head_bottom.png" id="head_bottom">
+
+                </div>
+                <div class="rowFirst">
+                    <div class="mod_title2">
+                        <div class="rowTitles2"><b><span id="why">Why </span><span id="us">Us</span></b></div>
+
+                    </div>
+                    <div class="whyCol">
+                        <div class="services2">
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="pure_air_new.svg">
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>PURE AIR</b></p>
+                                    <p class="texts2">Top-tier hvac system ensures fresh air</p>
+                                </div>
+                            </div>
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="observe_1.svg">
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>OBSERVED</b></p>
+                                    <p class="texts2">Stay connected with your pup</p>
+                                </div>
+                            </div>
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="squeaky_1.svg">
+
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>SQUEAKY CLEAN</b></p>
+                                    <p class="texts2">We maintain the highest sanitation standards.</p>
+                                </div>
+                            </div>
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="sure_footed_1.svg">
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>SURE FOOTED</b></p>
+                                    <p class="texts2">Our floors offers paw-friendly grip throughout</p>
+                                </div>
+                            </div>
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="in_out_1.svg">
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>IN AND OUT</b></p>
+                                    <p class="texts2">Seamless access to both indoor and outdoor areas</p>
+                                </div>
+                            </div>
+
+                            <div class="servicesdetails2">
+                                <div class="circularBackground">
+                                    <img class="imageBackground" src="dive_in_1.svg">
+                                </div>
+                                <div class="gapRowText">
+                                    <p class="titleServices2"><b>DIVE IN</b></p>
+                                    <p class="texts2">Dive into our pool and cool down.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second row (our services) -->
+            <div class="secondRow" id="target1">
+                <div class="rowFirst">
+                    <div class="mod_title">
+                        <div class="rowTitles"><b><span id="our">Our</span><span id="services"> Services</span></b>
+                        </div>
+                    </div>
+                    <div class="services-container">
+                        <div class="services">
+                            <div class="servicesdetails">
+                                <div class="circularBackground1">
+                                    <img class="imageBackground" src="boarding_new.svg">
+                                </div>
+                                <div class="gapRowText1">
+                                    <p class="titleServices"><b>BOARDING</b></p>
+                                    <p class="texts1"><span style="color: #363636;"><b>Overnight stay:</b>
+                                        </span><span style="color: #656565;">safe and comfortable home for
+                                            pets.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="servicesdetails">
+                                <div class="circularBackground1">
+                                    <img class="imageBackground" src="day_care_new.svg">
+                                </div>
+                                <div class="gapRowText1">
+                                    <p class="titleServices"><b>DAY CARE</b></p>
+                                    <p class="texts1"><span style="color: #363636;"><b>Limited
+                                                stay:</b></span><span style="color: #656565;"> A supervised daytime
+                                            care for pets.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="servicesdetails">
+                                <div class="circularBackground1">
+                                    <img class="imageBackground" src="training_new.svg">
+                                </div>
+                                <div class="gapRowText1">
+                                    <p class="titleServices"><b>TRAINING</b></p>
+                                    <p class="texts1" style="color: #656565;">We teach and reinforce desired
+                                        behaviors in pets.</p>
+                                </div>
+                            </div>
+                            <div class="servicesdetails">
+                                <div class="circularBackground1">
+                                    <img class="imageBackground" src="grooming_new.svg">
+                                </div>
+                                <div class="gapRowText1">
+                                    <p class="titleServices"><b>GROOMING</b></p>
+                                    <p class="texts1" style="color: #656565;">We enhance your pet's physical
+                                        appearance and hygiene.</p>
+                                </div>
+                            </div>
+                            <div class="servicesdetails">
+                                <div class="circularBackground1">
+                                    <img class="imageBackground" src="swimming_new.svg">
+                                </div>
+                                <div class="gapRowText1">
+                                    <p class="titleServices"><b>SWIMMING</b></p>
+                                    <p class="texts1" style="color: #656565;">Dive into fun! Safe, supervised swims
+                                        for happy hounds.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lastRow">
+                <div class="inLastRow">
+                    <div class="lastRowFirst">
+                        <div class="lastRowLogo"><img src="Logo Orange 4.png"></div>
+                        <div>
+                            <p class="lastRowText">We'll walk, play, and love your pup like our own.</p>
+                        </div>
+                    </div>
+                    <div class="lastRowCol2">
+                        <div class="lastRowText1">
+                            <p>Stay in loop</p>
+                        </div>
+                        <div class="form_claim_last_row">
+                            <div class="form_claim">
+                                <form id="contactForm1" method="POST" name="google-sheet1">
+                                    <div class="form-group">
+                                        <!-- <label class="form_texts" for="email"></label> -->
+                                        <input type="email" name="Email" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <label class="form_texts" for="phone"></label> -->
+                                        <input type="text" name="Mobile" placeholder="Mobile" required>
+                                    </div>
+                                    <div>
+                                        <input type="submit" value="Claim Access" name="submit1">
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+                            <div id="myModal" class="modal">
+                                <img class="alertImage" src="icon_of_form.png">
+                                <p class="alertText1">Thanks for showing interest!</p>
+                                <p class="alertText2"> We'll get back to you soon!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="socials">
+            <a href="https://www.linkedin.com/company/awwzo"><img class="social-icon" src="linkedIn_new.svg"
+                    alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/awwzoofficial/"><img class="social-icon" src="insta_new.svg"
+                    alt="Instagram"></a>
+            <a href="https://www.youtube.com/@awwzohq"><img class="social-icon" src="youtube_new.svg"
+                    alt="YouTube (X)"></a>
+            <a href="https://twitter.com/@awwzohq"><img class="social-icon" src="x_new.svg" alt="Twitter (X)"></a>
+        </div>
+    </div>
+    </div>
+    <!-- </div> -->
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxrZMnYH9n0pqKSxYcja0rNVyop7VC5QxsYz8SmTHm7GA4jrQNiPXqeg0NrysGDJbzpiA/exec';
+        const form = document.forms['google-sheet'];
+        const modal = document.getElementById('myModal');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            // Display the overlay
+            document.querySelector('.overlay').style.display = 'block';
+            // Display the modal
+            modal.style.display = 'flex';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // Automatically hide the modal after a few seconds
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                        // Hide the overlay
+                        document.querySelector('.overlay').style.display = 'none';
+                    }, 5000);
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+        const form1 = document.forms['google-sheet1'];
+        form1.addEventListener('submit', e => { // Change 'form' to 'form1'
+            e.preventDefault();
+            // Display the overlay
+            document.querySelector('.overlay').style.display = 'block';
+            // Display the modal
+            modal.style.display = 'flex';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form1) }) // Change 'form' to 'form1'
+                .then(response => {
+                    // Automatically hide the modal after a few seconds
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                        // Hide the overlay
+                        document.querySelector('.overlay').style.display = 'none';
+                    }, 5000);
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+
+
+
+
+
+
+        // function scrollToServices() {
+        //     const servicesSection = document.getElementById("target1");
+        //     if (servicesSection) {
+        //         servicesSection.scrollIntoView({ behavior: "smooth" });
+        //     }
+        // }
+        // function scrollToForm() {
+        //     const formSection = document.getElementById("target");
+        //     if (formSection) {
+        //         formSection.scrollIntoView({ behavior: "smooth" });
+        //     }
+        // }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get a reference to the nose image
+            var noseButton = document.getElementById("head_top");
+
+            // Get a reference to the "Why Us" section
+            var whyUsSection = document.getElementById("head_top");
+
+            // Add a click event listener to the nose image
+            noseButton.addEventListener("click", function () {
+                // Scroll to the "Why Us" section smoothly
+                whyUsSection.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+
+        $(function () {
+            $("#petAge").datepicker();
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+        const logo = document.getElementById("logoAwwzo");
+        if (logo) {
+            logo.addEventListener("click", scrollToTop);
+        }
+    </script>
+</body>
+
+</html>
