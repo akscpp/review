@@ -813,6 +813,9 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 520px) {
+    .footer{
+        text-align: center;
+    }
     
     #head_top{
         width: 300px;
